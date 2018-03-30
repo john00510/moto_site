@@ -4,6 +4,16 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
 
 export class App extends React.Component {
+  state = {
+    response: ''
+  };
+
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
+  }
+
   callApi = async () => {
       const response = await fetch('/');
       const body = await response.json();
