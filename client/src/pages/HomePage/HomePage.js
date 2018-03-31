@@ -18,7 +18,7 @@ export const HomePage = () => (
           <h1>Content</h1>
         </content>
         <footer>
-
+          <h1>Footer</h1>
         </footer>
       </div>
     </body>
