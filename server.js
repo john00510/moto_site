@@ -1,3 +1,4 @@
+import { exec } from 'child_process';
 const express = require('express');
 const path = require('path')
 const app = express();
@@ -10,7 +11,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/commit_event', (req, res) => {
-  res.send({ express: 'hello from commit event' });
+  exec(cmd, (err, stdout, stderr) => {
+    if (err) {
+      res.send({ express: stderr });
+    } else {
+      res.send({ express: stdout });
+    }
+  });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
