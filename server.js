@@ -1,4 +1,4 @@
-import { exec } from 'child_process';
+const exec = require('child_process').exec;
 const express = require('express');
 const path = require('path')
 const app = express();
@@ -10,7 +10,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-app.get('/commit_event', (req, res) => {
+app.post('/commit_event', (req, res) => {
+  var cmd = '/home/john/motosite/update.sh';
+
   exec(cmd, (err, stdout, stderr) => {
     if (err) {
       res.send({ express: stderr });
