@@ -7,7 +7,7 @@ import './main.css';
 export const HomePage = () => (
   <html lang="en">
     <head>
-      <title></title>
+      <title>Home Page</title>
     </head>
     <body data-rendering-name="Homepage">
       <div className="wrapper">
@@ -15,7 +15,7 @@ export const HomePage = () => (
           <PageHeaderLogo />
         </header>
         <content>
-
+          <h1>Content</h1>
         </content>
         <footer>
 
