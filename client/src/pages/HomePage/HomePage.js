@@ -13,6 +13,7 @@ export const HomePage = () => (
       <div className="wrapper">
         <header>
           <PageHeaderLogo />
+          <h1>Header</h1>
         </header>
         <content>
           <h1>Content</h1>
