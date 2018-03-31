@@ -16,7 +16,7 @@ export const HomePage = () => (
           <h1>Header</h1>
         </header>
         <content>
-          <h1>Content</h1>
+          <h1>???????</h1>
         </content>
         <footer>
           <h1>!!!!!!!!</h1>
