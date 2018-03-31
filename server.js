@@ -9,4 +9,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
+app.get('/commit_event', (req, res) => {
+  res.send({ express: 'hello from commit event' });
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
