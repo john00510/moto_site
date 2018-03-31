@@ -1,4 +1,5 @@
-const HomePageLayout = (<!DOCTYPE html>
+/* eslint-disable */
+const HomePageLayout = (<html>
 <html data-react-loaded="true" class="react-mounted" lang="en">
   <head class="at-element-marker">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">

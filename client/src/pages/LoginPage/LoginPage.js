@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const LoginPage = () => (
-  <html>
+const LoginPage = () => (
+  <html lang="en">
     <head>
       <title>Login Page</title>
     </head>
@@ -18,3 +18,5 @@ export const LoginPage = () => (
     </body>
   </html>
 );
+
+export default LoginPage;

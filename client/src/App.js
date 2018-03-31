@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from "react-router-dom";
-import { HomePage } from "./pages/HomePage/HomePage";
-import { LoginPage } from "./pages/LoginPage/LoginPage";
+import HomePage from "./pages/HomePage/HomePage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
-export class App extends React.Component {
+class App extends React.Component {
   state = {
     response: ''
   };
@@ -26,9 +26,11 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/login" exact component={LoginPage} />
+        <Route path="/" exact component={ HomePage } />
+        <Route path="/login" exact component={ LoginPage } />
       </div>
     );
   }
 }
+
+export default App;
