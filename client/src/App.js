@@ -18,7 +18,7 @@ export class App extends React.Component {
       const response = await fetch('/');
       const body = await response.json();
 
-      if (response.status != 200) throw Error(body.message);
+      if (response.status !== 200) throw Error(body.message);
 
       return body;
   };
