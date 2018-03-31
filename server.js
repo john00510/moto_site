@@ -12,9 +12,7 @@ app.get('/', (req, res) => {
 
 app.post('/commit_event', (req, res) => {
   var cmd = '/home/john/motosite/update.sh';
-  var url = req.post('host') + req.originalUrl;
 
-  if (url === '') {
     exec(cmd, (err, stdout, stderr) => {
       if (err) {
         res.send({ express: stderr });
@@ -22,9 +20,6 @@ app.post('/commit_event', (req, res) => {
         res.send({ express: stdout });
       }
     });
-  } else {
-    res.send({ express: 'validation error' });
-  }
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
