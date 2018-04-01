@@ -1,33 +1,5 @@
 import React from 'react';
 
-class Make extends React.Component {
-  constructor(props) {
-      super(props);
-  }
-
-  render() {
-    return(
-      <li>
-        <a href={ this.props.href }>{ this.props.make }</a>
-      </li>
-    );
-  }
-}
-
-class AllMakes extends React.Component {
-  render() {
-    return(
-      <div className="link-section-makes">
-        <h2>Shop by all Makes</h2>
-        <ul>
-          <Make href="cars/acura" make="Acura" />
-        </ul>
-        <a href="cars" className="link-section-all--link">Shop For All Makes and Models</a>
-      </div>
-    );
-  }
-}
-
 const makes = [
   ["cars/acura", "Acura"],
   ["cars/audi", "Audi"],
@@ -67,5 +39,23 @@ const makes = [
   ["cars/volkswagen", "Volkswagen"],
   ["cars/volvo", "Volvo"]
 ]
+
+const makesList = makes.map(
+  make => <li><a href={ make[0] }>{ make[1] }</a></li>
+);
+
+class AllMakes extends React.Component {
+  render() {
+    return(
+      <div className="link-section--makes">
+        <h2>Shop by all Makes</h2>
+        <ul>
+          { makesList }
+        </ul>
+        <a href="cars" className="link-section-all--link">Shop For All Makes and Models</a>
+      </div>
+    );
+  }
+}
 
 export default AllMakes;

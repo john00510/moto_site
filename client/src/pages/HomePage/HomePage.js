@@ -6,31 +6,31 @@ import AllTypes from './Components/AllTypes';
 import './fonts.css';
 import './main.css';
 
-class HomePage extends React.Component {
-  render() {
-    return(
-      <html lang="en">
-        <head className="at-element-marker">
-          <title>Home Page</title>
-        </head>
-        <body data-rendering-name="Homepage">
-          <div className="wrapper">
-            <header>
-              <PageHeaderLogo />
-            </header>
-            <content>
-              <div className="homepage-links">
-                <AllMakes MainLink="http://localhost:3000/" />
-                <AllTypes MainLink="http://localhost:3000/" />
-              </div>
-            </content>
-            <footer>
-            </footer>
+const mainLink = "http://localhost:3000/";
+
+const HomePage = () => (
+  <html lang="en">
+    <head className="at-element-marker">
+      <title>Home Page</title>
+    </head>
+    <body data-rendering-name="Homepage">
+      <div className="wrapper">
+        <header>
+          <PageHeaderLogo />
+        </header>
+        <content>
+          <div className="homepage-links">
+            <div id="seeAllSection" className="link-section-all">
+              <AllMakes MainLink={ mainLink } />
+              <AllTypes MainLink={ mainLink } />
+            </div>
           </div>
-        </body>
-      </html>
-    );
-  }
-}
+        </content>
+        <footer>
+        </footer>
+      </div>
+    </body>
+  </html>
+);
 
 export default HomePage;
