@@ -41,7 +41,7 @@ const makes = [
 ]
 
 const makesList = makes.map(
-  make => <li><a href={ make[0] }>{ make[1] }</a></li>
+  (make, i) => <li><a href={ make[0] } key={ 'make_' + i }>{ make[1] }</a></li>
 );
 
 class AllMakes extends React.Component {
