@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const makes = [
   ["cars/acura", "Acura"],
@@ -41,7 +42,8 @@ const makes = [
 ]
 
 const makesList = makes.map(
-  (make, i) => <li><a href={ make[0] } key={ 'make_' + i }>{ make[1] }</a></li>
+/*  (make, i) => <li><a href={ make[0] } key={ 'make_' + i }>{ make[1] }</a></li> */
+  (make, i) => <li><Link to="/cars">{make[1]}</Link></li>
 );
 
 class AllMakes extends React.Component {

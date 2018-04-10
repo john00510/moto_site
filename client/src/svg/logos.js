@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PageHeaderLogo = () => (
-      <a href="https://www.carmax.com/" className="page-header--logo">
+      <a href="/" className="page-header--logo">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" id="carmax-logo-blue" className="" viewBox="0 0 115.664 22.589">
           <polygon fillRule="evenodd" clipRule="evenodd" fill="#FFD520" points="46.099,19.236 57.579,19.236 57.579,22.589 46.099,22.589 46.099,19.236"></polygon>
           <polygon fillRule="evenodd" clipRule="evenodd" fill="#FFD520" points="60.756,19.236 72.236,19.236 72.236,22.589 60.756,22.589 60.756,19.236"></polygon>

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Route } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
-import LoginPage from "./pages/LoginPage/LoginPage";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import CarsPage from "./pages/CarsPage";
+import SellMyCar from "./pages/SellMyCar";
+import CarFinancing from "./pages/CarFinancing";
 
 class App extends React.Component {
   state = {
@@ -28,6 +31,9 @@ class App extends React.Component {
       <div>
         <Route path="/" exact component={ HomePage } />
         <Route path="/login" exact component={ LoginPage } />
+        <Route path="/cars*" exact component={ CarsPage } />
+        <Route path="/sell-my-car" exact component={ SellMyCar } />
+        <Route path="/car-financing" exact component={ CarFinancing } />
       </div>
     );
   }

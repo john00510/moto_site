@@ -1,20 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import PageHeaderLogo from './svg/logos';
-import AllMakes from './Components/AllMakes';
-import AllTypes from './Components/AllTypes';
-import GlobalHeader from './Components/GlobalHeader';
-import GlobalUtilityHeader from './Components/GlobalUtilityHeader';
-import './fonts.css';
-import './main.css';
+import AllMakes from '../components/AllMakes';
+import AllTypes from '../components/AllTypes';
+import Header from '../components/Header';
+import '../css/fonts.css';
+import '../css/main.css';
 
 const mainLink = "http://localhost:3000/";
 
 class HomePage extends React.Component {
-  myFunc() {
-    alert('Scroll');
-  }
-
   render() {
     return (
       <html lang="en">
@@ -23,19 +17,13 @@ class HomePage extends React.Component {
         </head>
         <body data-rendering-name="Homepage">
           <div className="wrapper">
-            <header className="page-header  sticky" onScroll={this.myFunc} data-js="StickyNav" data-kmx="global-header">
-              <div className="content">
-                <PageHeaderLogo />
-                <GlobalUtilityHeader />
-                <GlobalHeader />
-              </div>
-            </header>
+            <Header />
             <div className="container body-content" style={{ marginTop: "0px" }}>
               <div className="content">
                 <div className="homepage-links">
                   <div id="seeAllSection" className="link-section-all">
-                    <AllMakes MainLink={ mainLink } />
-                    <AllTypes MainLink={ mainLink } />
+                    <AllMakes />
+                    <AllTypes />
                   </div>
                 </div>
               </div>

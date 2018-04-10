@@ -1,13 +1,18 @@
-const exec = require('child_process').exec;
-const express = require('express');
-const path = require('path')
+/* const exec = require('child_process').exec; */
+import express from 'express';
+import path from 'path';
+
 const app = express();
-const port = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
+app.get('/cdn/*', (req, res) => {
+  let name = req.url.split('/').pop();
+  res.sendFile(path.join(__dirname, `images/${name}`));
 });
 
 app.post('/commit_event', (req, res) => {
@@ -22,4 +27,4 @@ app.post('/commit_event', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(3001, () => console.log(`Listening on port 3001`));

@@ -9,8 +9,8 @@
           <div class="slick-list">
             <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 4212px;">
               <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline: medium none currentcolor;">
-                <a href="https://www.carmax.com/car/15415286" class="car-tile">
-                  <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342_002.jpg">
+                <a href="/car/15415286" class="car-tile">
+                  <img class="car-tile--hero-image" src="/cdn/342_002.jpg">
                     <div class="car-tile--info-container">
                       <div class="car-tile--heading-container">
                         <h3 class="car-tile--heading">2015 Acura RDX</h3>
@@ -26,8 +26,8 @@
                   </a>
                 </div>
                 <div data-index="1" class="slick-slide slick-active" tabindex="-1" style="outline: medium none currentcolor;">
-                  <a href="https://www.carmax.com/car/15401249" class="car-tile">
-                    <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342.jpg">
+                  <a href="/car/15401249" class="car-tile">
+                    <img class="car-tile--hero-image" src="/cdn/342.jpg">
                       <div class="car-tile--info-container">
                         <div class="car-tile--heading-container">
                           <h3 class="car-tile--heading">2016 Acura TLX</h3>
@@ -43,8 +43,8 @@
                     </a>
                   </div>
                   <div data-index="2" class="slick-slide slick-active" tabindex="-1" style="outline: medium none currentcolor;">
-                    <a href="https://www.carmax.com/car/14945306" class="car-tile">
-                      <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342_004.jpg">
+                    <a href="/car/14945306" class="car-tile">
+                      <img class="car-tile--hero-image" src="/cdn/342_004.jpg">
                         <div class="car-tile--info-container">
                           <div class="car-tile--heading-container">
                             <h3 class="car-tile--heading">2017 Acura ILX</h3>
@@ -60,8 +60,8 @@
                       </a>
                     </div>
                     <div data-index="3" class="slick-slide" tabindex="-1" style="outline: medium none currentcolor;">
-                      <a href="https://www.carmax.com/car/15593556" class="car-tile">
-                        <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342_003.jpg">
+                      <a href="/car/15593556" class="car-tile">
+                        <img class="car-tile--hero-image" src="/cdn/342_003.jpg">
                           <div class="car-tile--info-container">
                             <div class="car-tile--heading-container">
                               <h3 class="car-tile--heading">2015 Audi A3 Premium</h3>
@@ -77,8 +77,8 @@
                         </a>
                       </div>
                       <div data-index="4" class="slick-slide" tabindex="-1" style="outline: medium none currentcolor;">
-                        <a href="https://www.carmax.com/car/15755581" class="car-tile">
-                          <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342_006.jpg">
+                        <a href="/car/15755581" class="car-tile">
+                          <img class="car-tile--hero-image" src="/cdn/342_006.jpg">
                             <div class="car-tile--info-container">
                               <div class="car-tile--heading-container">
                                 <h3 class="car-tile--heading">2013 Chevrolet Equinox LS</h3>
@@ -94,8 +94,8 @@
                           </a>
                         </div>
                         <div data-index="5" class="slick-slide" tabindex="-1" style="outline: medium none currentcolor;">
-                          <a href="https://www.carmax.com/car/15639496" class="car-tile">
-                            <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342_007.jpg">
+                          <a href="/car/15639496" class="car-tile">
+                            <img class="car-tile--hero-image" src="/cdn/342_007.jpg">
                               <div class="car-tile--info-container">
                                 <div class="car-tile--heading-container">
                                   <h3 class="car-tile--heading">2017 Buick LaCrosse Premium</h3>
@@ -111,8 +111,8 @@
                             </a>
                           </div>
                           <div data-index="6" class="slick-slide" tabindex="-1" style="outline: medium none currentcolor;">
-                            <a href="https://www.carmax.com/car/15312769" class="car-tile">
-                              <img class="car-tile--hero-image" src="CarMax%20-%20Browse%20used%20cars%20and%20new%20cars%20online_files/342_005.jpg">
+                            <a href="/car/15312769" class="car-tile">
+                              <img class="car-tile--hero-image" src="/cdn/342_005.jpg">
                                 <div class="car-tile--info-container">
                                   <div class="car-tile--heading-container">
                                     <h3 class="car-tile--heading">2016 Audi A3 Premium</h3>
