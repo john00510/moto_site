@@ -1,12 +1,12 @@
 import React from 'react';
 import PageHeaderLogo from '../svg/logos';
-import GlobalHeader from '../components/GlobalHeader';
-import GlobalUtilityHeader from '../components/GlobalUtilityHeader';
+import GlobalHeader from '../components/header_components/GlobalHeader';
+import GlobalUtilityHeader from '../components/header_components/GlobalUtilityHeader';
 
 class Header extends React.Component {
   render() {
     return(
-      <header className="page-header" data-js="StickyNav" data-kmx="global-header">
+      <header className={this.props.headerSticky} dataJs="StickyNav">
         <div className="content">
           <PageHeaderLogo />
           <GlobalUtilityHeader />
