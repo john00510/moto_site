@@ -12,7 +12,7 @@ class HomeContent extends React.Component {
 
     return(
       <div className="container body-content" style={style}>
-        {/*<HeroPromo />*/}
+        <HeroPromo />
         <VehicleSearch />
         {/*<RecentlyViewedVehicles />*/}
         {/*<RecomendedVehicles />*/}
