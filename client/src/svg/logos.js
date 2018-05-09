@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PageHeaderLogo = () => (
+const PageHeaderLogo2 = () => (
       <a href="/" className="page-header--logo">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" id="carmax-logo-blue" className="" viewBox="0 0 115.664 22.589">
           <polygon fillRule="evenodd" clipRule="evenodd" fill="#FFD520" points="46.099,19.236 57.579,19.236 57.579,22.589 46.099,22.589 46.099,19.236"></polygon>
@@ -18,5 +18,11 @@ const PageHeaderLogo = () => (
         </svg>
       </a>
   );
+
+const PageHeaderLogo = () => (
+    <a href="/" className="page-header--logo">
+        <h1>carquoteking</h1>
+    </a>
+);
 
 export default PageHeaderLogo;
