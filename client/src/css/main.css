@@ -7349,7 +7349,7 @@ input~.star-rating--star.selected svg {
 .background-image-responsive {
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   top: 0;
   left: 0;

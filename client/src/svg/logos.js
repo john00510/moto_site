@@ -1,5 +1,9 @@
 import React from 'react';
 
+const styles = {
+  fontSize: 45,
+};
+
 const PageHeaderLogo2 = () => (
       <a href="/" className="page-header--logo">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" id="carmax-logo-blue" className="" viewBox="0 0 115.664 22.589">
@@ -21,7 +25,7 @@ const PageHeaderLogo2 = () => (
 
 const PageHeaderLogo = () => (
     <a href="/" className="page-header--logo">
-        <h1>carquoteking</h1>
+        <h1 style={styles}>carquoteking</h1>
     </a>
 );
 
