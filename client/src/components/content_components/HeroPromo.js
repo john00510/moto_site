@@ -1,7 +1,7 @@
 import React from 'react';
 
 const styles = {
-  backgroundImage: "url('/cdn/car.svg')"
+  backgroundImage: "url('/cdn/best-suvs-ranking-abstract-319x180.jpg')"
 };
 
 class HeroPromo extends React.Component {
