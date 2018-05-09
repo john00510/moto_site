@@ -2,15 +2,19 @@ import React from 'react';
 import GlobalSubNav1 from './GlobalSubNav1';
 import GlobalSubNav2 from './GlobalSubNav2';
 
+const elements = [
+  ["buysMenu", "cars", "Cars For Sale"],
+  ["sellsMenu", "sell-my-car", "Sell Your Car"],
+  ["financeMenu", "car-financing", "Financing"],
+  ["researchMenu", "research", "Research"]
+];
+
+const styles = {
+  float: 'right',
+};
+
 class GlobalNav extends React.Component {
   render() {
-    const elements = [
-      ["buysMenu", "cars", "Cars For Sale"],
-      ["sellsMenu", "sell-my-car", "Sell Your Car"],
-      ["financeMenu", "car-financing", "Financing"],
-      ["researchMenu", "research", "Research"]
-    ];
-
     const elementsList = elements.map(elm =>
       <li className="global-nav--item global-nav--item-has-subnav" id={elm[0]}>
         <a className="global-nav--link" href={elm[1]}>{elm[2]}</a>
@@ -23,7 +27,7 @@ class GlobalNav extends React.Component {
         <ul className="global-nav--list" dataJs="jsToggle" style={{listStyleType: "none"}}>
           {elementsList}
 
-          <li className="global-nav--item global-nav--my-carmax">
+          {/*<li className="global-nav--item global-nav--my-carmax">
             <div style={{ height: "100%" }}>
               <span>
                 <svg className="global-nav--my-carmax--header--icon" id="my-carmax-car" role="img" viewBox="0 0 15 14">
@@ -31,15 +35,15 @@ class GlobalNav extends React.Component {
                 </svg>
               </span>
               <h3 className="global-nav--my-carmax--header--title">MyCarMax</h3>
-              {/*<GlobalSubNav1 />
+              <GlobalSubNav1 />
               <div className="global-nav--my-carmax--dropdown--box global-nav--item--subnav-my-carmax">
                 <div className="global-nav--my-carmax--dropdown">
                   <GlobalSubNav2 />
                   <div className="global-nav--my-carmax--dropdown--btn" data-js="jsDropDown"></div>
                 </div>
-              </div>*/}
+              </div>
             </div>
-          </li>
+          </li>*/}
         </ul>
       </div>
     );

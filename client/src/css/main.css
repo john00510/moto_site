@@ -3550,7 +3550,7 @@ nav li:before {
 
 .page-header--utility-nav {
   *zoom: 1;
-  float: left;
+  float: right;
   clear: none;
   text-align: inherit;
   width: 66.25466666666665%;
@@ -3728,7 +3728,7 @@ nav li:before {
   opacity: 1;
   background: none;
   *zoom: 1;
-  float: left;
+  float: right;
   clear: none;
   text-align: inherit;
   width: 66.25466666666665%;
@@ -3858,6 +3858,7 @@ nav li:before {
   .global-nav--item {
     position: static
   }
+  /*
   .global-nav--item:last-child {
     width: 6.9375rem;
     height: 8.125rem;
@@ -3876,6 +3877,7 @@ nav li:before {
   .global-nav--item:last-child:hover {
     padding: .75rem .125rem 0 .75rem
   }
+  */
   .global-nav--item-has-subnav:hover {
     padding-bottom: 1.25rem;
   }
