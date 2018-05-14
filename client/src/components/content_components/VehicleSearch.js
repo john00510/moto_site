@@ -151,7 +151,7 @@ class AdvancedSearchFlyouts extends React.Component {
 class VehicleSearch extends React.Component {
   render() {
     return(
-      <div className="vehicle-search" dataRenderingName="SearchVehiclesBox" id="SearchVehiclesBox">
+      <div className="vehicle-search" id="SearchVehiclesBox">
         <div className="content">
             <SearchForm />
             <AdvancedSearchFlyouts />

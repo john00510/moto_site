@@ -15,6 +15,10 @@ app.get('/cdn/*', (req, res) => {
   res.sendFile(path.join(__dirname, `images/${name}`));
 });
 
+app.get('/api/*', (req, res) => {
+  res.status(200).json({status: "OK"});
+});
+
 app.post('/commit_event', (req, res) => {
   var cmd = '/home/john/motosite/update.sh';
 
