@@ -15,7 +15,7 @@ app.get('/cdn/*', (req, res) => {
   res.sendFile(path.join(__dirname, `images/${name}`));
 });
 
-app.get('/api/*', (req, res) => {
+app.post('/api', (req, res) => {
   res.status(200).json({status: "OK"});
 });
 
