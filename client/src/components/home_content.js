@@ -2,7 +2,7 @@ import React from 'react';
 import AllMakes from './content_components/AllMakes';
 import AllTypes from './content_components/AllTypes';
 import HeroPromo from './content_components/HeroPromo';
-import VehicleSearch from './content_components/VehicleSearch';
+import VehicleSearch from './content_components/vehicle_search';
 import RecomendedVehicles from './content_components/RecomendedVehicles';
 import RecentlyViewedVehicles from './content_components/RecentlyViewedVehicles';
 

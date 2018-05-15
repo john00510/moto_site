@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Header from '../components/Header';
-import HomeContent from '../components/HomeContent';
+import HomeContent from '../components/home_content';
 import '../css/fonts.css';
 import '../css/main.css';
 
